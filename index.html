@@ -1,0 +1,324 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>豆瓜</title>
+        <link href="./css/main.css" type="text/css" rel="stylesheet"/>
+        <link href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <a href="#" id="download" ></a>
+        <a href="#" id="nav_up"  class="nav_up"></a>
+        <a href="#" id="nav_down" class="nav_down" ></a>
+        <div class="clear"></div>
+        <div id="event-intro">
+            <div id="event-simple-wrapper">
+                <span id="event-name" class="font-black">MuSic In Wuhan 寻找武汉最声音</span>
+                <span id="event-type" class="font-12 font-gray">公共活动</span>
+                <div id="event-joinamount">
+                    <span   class="font-12 font-yellow">23<span   class="font-12 font-gray">人参加</span></span>
+                     <span   class="font-12 font-gray">|</span>
+                    <span   class="font-12 font-little-green">234<span   class="font-12 font-gray">人围观</span></span>
+                </div>
+
+            </div>
+            <div id="event-detail-wrapper">
+                <div id="detail-left">
+                    <img src="./images/avatar.jpg" alt="avatar" id='createrimg'/>
+                    <div id="event-creater-info">
+                        <span id="event-creater-name" class="font-black">刘友斌</span>
+                        <span id="event-creater-sex" class="font-gray">男</span>
+                        <br/>
+                        <span id="event-creater-college" class="font-gray">武汉大学</span>
+
+                    </div>
+                    <ul>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                        <li><img src="./images/avatar.jpg" />
+                        </li>
+                    </ul>
+                    <!-- JiaThis Button BEGIN -->
+                    <div id="ckepop" class="myjiathis">
+                        <span class="jiathis_txt">分享到：</span>
+                        <a class="jiathis_button_renren"></a>
+                        <a class="jiathis_button_tsina"></a>
+                        <a class="jiathis_button_tqq"></a>
+                        <a class="jiathis_button_fb"></a>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                        <a class="jiathis_counter_style"></a>
+                    </div>
+                    <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </div>
+                <div id="detail-right">
+                    <div id="action">
+                        <input type="button" class="btn left font-gray" onclick="javascript:circusee('657');" value="围观"/>
+                        <input type="button" class="btn left font-gray" onclick="javascript:join('657');" value="参加"/>
+                       <a href="text.html" class="btn left font-gray fancybox">文本</a>
+                        <a href="photo.html" class="btn left font-gray fancybox">相片</a>
+                        <a href="voice.html" class="btn left font-gray fancybox">语音</a>
+                        <!-- -->
+                    </div>
+                    <div class="clear"></div>
+                    <ul id="detail-info">
+                        <li>
+                            <img src="images/address.png" alt=""/>
+                            <!--<span id="info-icon-address" class="info-icon"></span>-->
+                            <span class="info-words">武昌积玉桥城壕167号蓝调音乐（Blues）主题咖啡馆</span>
+                        </li>
+                        <li>
+                            <!--<span id="info-icon-time" class="info-icon"></span>-->
+                            <img src="images/time.png" alt=""/>
+                            <span class="info-words">05-03(今天) 11:30 持续30天</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div id="hotimg">
+                    <a href="hotphoto.html?abc=edf" id="hotphoto-a">
+                        <img src="images/photoframe.png" alt="photoframe" id="photoframe"/>
+                    </a>
+                    <span id="recount" class="font-red font-12">135</span>
+                    <img src="test/ex2.jpg" alt="hotimg" id="hotphoto"/>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div class="timeline_container">
+                <div class="timeline"></div>
+            </div>
+
+            <div class="item">
+                <div class="item-join">
+                    <span class="font-green">陈琦琦，邱江毅，李斯，刘友斌</span>等<span class="font-green">7</span>人参加了该活动
+                </div>
+                <div class="inner">
+                    <div class="event-join">
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footerwrap">
+            <div id="evnet-creation">
+                <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                <div id="creation-tips">
+                    <span class="font-green font-14">刘友斌</span><span class="font-gray font-14">创建了该活动</span><span class="font-gray font-12"> 12:23 04-27</span>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.masonry.js"></script>
+        <script type="text/javascript" src="js/jquery.jmp3.js"></script>
+        <script type="text/javascript" src="js/jquery.scroll.js"></script>
+        <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript">
+           /***
+            * 围观 参与 事件
+            */
+            function circusee(aid) {
+                //这里添加围观的代码
+                alert("这里添加围观的代码");
+            }
+
+            function join(aid) {
+                alert("这里添加参与的代码");
+
+            }
+            /***
+             * 绑定弹出层代码
+             */
+            $(function() {
+                $("#hotphoto-a").fancybox({
+                    'width'             : 780,
+                    'height'            : 700,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'type'              : 'iframe'
+                });
+                $(".fancybox").fancybox({
+                    'width'             : 780,
+                    'height'            : 600,
+                    'autoScale'         : true,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'type'              : 'iframe'
+                });
+                /***
+                 * 显示箭头
+                 */
+                function Arrow_Points() {
+                    var s = $("#container").find(".item");
+                    $.each(s, function(i, obj) {
+                        if($(obj).attr("rel") == "itempack")return;
+                        var posLeft = $(obj).css("left");
+                        if(posLeft == "0px") {
+                            html = "<span class='rightCorner'></span>";
+                            $(obj).prepend(html);
+                        } else {
+                            html = "<span class='leftCorner'></span>";
+                            $(obj).prepend(html);
+                        }
+                    });
+                }
+                                
+                function reBindPage() {
+                    
+                        $("#container").imagesLoaded(function(){
+                            $("#container").masonry({
+                                itemSelector : ".item"
+                            });
+                            Arrow_Points();
+                            $(".timeline").height($("#container").height()+20);
+                        })
+                        
+                        $(".mp3").jmp3({
+                            backcolor : "ffd700",
+                            forecolor : "8B4513",
+                            width : 320,
+                            showdownload : "false"
+                        });
+                    
+                }
+
+                function buildHtml(resObj) {
+                    var item = "";
+                    if(resObj.success) {
+                        var eventdata = resObj.data;
+                        createTime = eventdata.created_at;
+                        joined = eventdata.joined;
+                        eventlist = eventdata.list;
+                        num = eventlist.length
+                        for( i = 0; i < num; i++) {
+                            //2012-05-27T01:44:47+08:00
+                            if(i == 1){
+                                item += "<div class='item itempack' rel='itempack'></div>";
+                            }
+                            eventlist[i].created_at = eventlist[i].created_at.substring(5, 10) + " " + eventlist[i].created_at.substring(11, 16)
+                            item += "<div class=\"item\">" + "<div class=\"item-header\">" + "<img src=\"" + eventlist[i].avatar + "\" alt=\"avatar\" class=\"avatar\"/>" + "<div class=\"item-user\">" + "<span class=\"font-green\">" + eventlist[i].username + "</span>" + "<span class=\"font-gray\">" + eventlist[i].created_at + "</span>" + "</div>" ; 
+                            if(eventlist[i].comment_count == 0){
+                                item += "<div class=\"item-action\">" + "<img src=\"./images/comment_n.png\" alt=\"comments\"/>" + "<span class='font-gray'>" + eventlist[i].comment_count + "</span>";
+                            }else{
+                                item += "<div class=\"item-action\">" + "<img src=\"./images/comment_y.png\" alt=\"comments\"/>" + "<span class='font-yellow'>" + eventlist[i].comment_count + "</span>";
+                            }
+                            
+                            item += "<div class='likewrap' id='likediv'>";
+                            
+                            if(eventlist[i].like) {
+                                item += "<img onclick='dislike(this)' src=\"./images/like_y.png\" alt=\"like\"/>" + "<span class='font-red'>" + eventlist[i].like_count + "</span>";
+                            } else {
+                                item += "<img onclick='like(this)' src=\"./images/like_n.png\" alt=\"dislike\"/>" + "<span class='font-gray'>" + eventlist[i].like_count + "</span>";
+                            }
+                            item += "</div></div>" + "</div>" + "<div class=\"inner\">";
+                            if(eventlist[i].type == "voice") {
+
+                                item += "<div class=\"event-voice\">" + "<span class=\"mp3\">" + eventlist[i].content.replace("3gp", "mp3") + "</span>" + "</div>";
+                            } else if(eventlist[i].type == "picture") {
+                                item += "<div class=\"event-img\">" + "<div class=\"event-img\"><img src=\"" + eventlist[i].content + "\" alt='" + eventlist[i].description + "' width=370/></div>" + "</div>";
+                            } else if(eventlist[i].type == "text") {
+                                item += "<div class=\"event-word\">	" + eventlist[i].content + "</div>"
+                            } else {
+
+                            }
+                            item += "</div></div>";
+                        }
+                    }
+                    $(item).insertAfter(".timeline_container");
+                }
+
+                function loadData() {
+                    $.get("./test/lives.json", {
+                        "aid" : "657"
+                    }, function(data) {
+                        buildHtml(data);
+                        //window.onload = function() { 
+                            reBindPage();
+                        //}
+                    }, 'json');
+                }
+
+                loadData();
+
+                function refresh() {
+                    if($(document).scrollTop() > 0)
+                        return;
+                    $("#container").masonry('destroy');
+                    $(".item").remove();
+                    loadData();
+                }
+
+                //setInterval(refresh,10000);
+
+                function bindUpAndDown() {
+                    //Mouseover no action
+                    $("#popup").mouseup(function() {
+                        return false;
+                    });
+
+                    //outside action of the popup block
+                    $(document).mouseup(function() {
+                        $("#popup").hide();
+                    });
+
+                    var $elem = $('body');
+                    $('#nav_up').fadeIn('slow');
+                    $('#nav_down').fadeIn('slow');
+
+                    $(window).bind('scrollstart', function() {
+                        $('#nav_up,#nav_down').stop().animate({
+                            'opacity' : '0.2'
+                        });
+                    });
+                    $(window).bind('scrollstop', function() {
+                        $('#nav_up,#nav_down').stop().animate({
+                            'opacity' : '1'
+                        });
+                    });
+                    $('#nav_down').click(function(e) {
+                        $('html, body').animate({
+                            scrollTop : $elem.height()
+                        }, 800);
+                    });
+                    $('#nav_up').click(function(e) {
+                        $('html, body').animate({
+                            scrollTop : '0px'
+                        }, 800);
+                    });
+
+                }
+
+                bindUpAndDown();
+
+            });
+        </script>
+    </body>
+</html>

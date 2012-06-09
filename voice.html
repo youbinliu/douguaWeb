@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>豆瓜</title>
+        <link href="./css/main.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>  
+	<div id="iframe-container">
+		<div class="text-userinfo">
+				<img src="test/avatar.png" alt="avatar" class="text-createbyavatar left"/>
+				<div class="left text-item-user margin-left-5">
+					<span  class="font-green">陈琦琦</span>
+					<span  class="font-12 font-gray">女</span>
+					<span  class="font-12 font-gray">华中科科技大学</span>	
+				</div>
+				<div class="iframe-item-action">
+				    <div class="left">
+    					<img src="./images/comment_s_y.png" alt="comments"/>
+    					<span class='font-yellow'>5</span>
+					</div>
+					<div class='likewrap' >								
+						<img onclick='dislike_s(this)' src="./images/like_s_y.png" alt="like"/>
+						<span class='font-red'>5</span>
+					</div>
+				</div>
+				<br />
+				<div class="left margin-left-5 margin-top-10">
+					  <span id="voice">http://dougua.cc/system/lives/voices/1337966061818.mp3</span>
+				</div>
+			</div>
+			<div class="iframe-msgs margin-top-10" >
+								
+				
+			</div>
+			<input type="text" name="replyto" id="iframe-replyto" class="left margin-top-10"/>
+                <input type="button" class="btn left font-gray margin-top-10 margin-left-5" onclick="javascript:replyto('657');" value="留言"/>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jmp3.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		$("#voice").jmp3({
+					backcolor: "ffd700",
+					forecolor: "8B4513",
+					width: 400,
+					showdownload: "false"
+				});		
+		initComments();	
+	</script>
+</body>
+</html>
