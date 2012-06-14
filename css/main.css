@@ -1,9 +1,20 @@
+.bg{
+	top:-61px;
+	left:232px;
+	position:absolute;
+	background-image:url(../images/webgb.jpg);
+	width:1200px;
+	height:1230px;
+	filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;
+	z-index:10000;
+
+}
 *{
 	margin: 0 auto;
 	padding: 0;
 	font-family:"微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:#575757;
-    text-align:justify;
+    	text-align:justify;
 }
 
 ul,ol {
@@ -71,6 +82,12 @@ body{
     cursor: default;
     opacity: 0.65;
 }
+.font-bold{
+	font-weight:bold;
+}
+.font-normal{
+	font-weight:normal;
+}
 .font-green{
 	color:#22AC38;
 }
@@ -95,6 +112,12 @@ body{
 .font-14{
 	font-size:14px;
 }
+.font-10{
+	font-size:10px;
+}
+.font-18{
+	font-size:18px;
+}
 .clear{
 	clear:both;
 }
@@ -107,7 +130,7 @@ body{
 }
 
 #event-simple-wrapper{
-    border-bottom: 2px solid #B4BBCD;
+    border-bottom: 1px solid #B4BBCD;
     margin-bottom: 10px;
 }
 /*********
@@ -124,7 +147,7 @@ body{
 .iframe-item-action{
     float:right;
     display:block;
-    margin-right:12px;
+    margin-right:15px;
 }
 
 .iframe-item-action img{
@@ -132,13 +155,13 @@ body{
     width:25px;
     height:25px;
     display:block; 
-    vertical-align:middle;
     float:left;
 }
 .iframe-item-action span{
-    font-size:20px;
+    font-size:18px;
     display:block;
     float:left;
+    margin-top:4px;
 }
 .iframe-item{
 	width:250px;
@@ -223,35 +246,25 @@ body{
 }
 /*event-intro*/
 
-#event-name{
-	font-size:18px;
-	font-weight:bold;	
-}
 #event-joinamount{
 	float:right;
 	margin-top:4px;
 }
 #detail-left{
-	width: 210px;
+	width: 200px;
 	height: auto;
 	overflow:hidden;
 	float:left;
 }
-#createrimg{
-	float: left;
-	margin-right:1px;
-	width:64px;
-	height:64px;
-}
 .myjiathis{
 	float:left;
-	margin-top:15px;
+	margin-top:25px;
 	margin-left:5px;
 }
 #detail-left #event-creater-info{
-	float: right;
-	margin-right:70px;
 	height:33px;
+	width:115px;
+	margin-left:4px;
 	line-height:14px;
 }
 
@@ -261,18 +274,24 @@ body{
 #event-creater-college,#event-creater-sex{
 	font-size:8pt;
 }
+#li-createimg{
+	width:64px;
+	height:64px;
+	
+}
 #detail-left ul li{
 	float: left;
 	margin:1px;
 }
 #detail-left ul li img{
 	float:left;
-	width:30px;
+	width:31px;
 	height:30px;
 }
 #detail-right{
 	float:left;
-	width:310px;
+	margin:0 20px;
+	width:320px;
 }
 #action{
 	float:right;
@@ -285,7 +304,7 @@ body{
 }
 
 #detail-info{
-	margin-top:10px;
+	margin-top:26px;
 	font-size:12px;
 	color:gray;
 }
@@ -302,7 +321,6 @@ body{
 	width:220px;
 	height:150px;
 	float:left;
-	margin-left:30px;
 	position:relative;
 }
 #photoframe{
@@ -312,6 +330,7 @@ body{
 	left:0;
 	top:0;
 	z-index: 1;
+	border:0 none;
 }
 #recount{
 	display:block;
@@ -415,6 +434,7 @@ body{
 	float:right;
 	display:block;
 	margin-right:12px;
+	vertical-align:middle;
 }
 .likewrap{
 	float:right;
@@ -429,9 +449,10 @@ body{
 	float:left;
 }
 .item-action span{
-	font-size:25px;
+	font-size:20px;
 	display:block;
 	float:left;
+	margin-top:3px;
 }
 .item-join{
 	font-size:14px;
