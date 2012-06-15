@@ -991,7 +991,7 @@
                 //window.onload = function() {     
                 //    $(el).css(this.wh,$(el).children("a").children("img").height()+'px');
                //}
-                $(el).css(this.wh,$(el).children("a").children("img").height()+'px');
+                $(el).css(this.wh,$(el).children("div").children("a").children("img").height()+'px');
                  //$(el).css(this.wh, w + 'px');//canceled by youbinliu
                 return this.dimension(el);
             }

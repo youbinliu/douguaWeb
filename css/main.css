@@ -128,7 +128,9 @@ body{
 .margin-left-5{
 	margin-left:5px;
 }
-
+.margin-left-2{
+    margin-left: 2px;
+}
 #event-simple-wrapper{
     border-bottom: 1px solid #B4BBCD;
     margin-bottom: 10px;
@@ -158,10 +160,10 @@ body{
     float:left;
 }
 .iframe-item-action span{
-    font-size:18px;
+    font-size:14px;
     display:block;
     float:left;
-    margin-top:4px;
+    margin-top:6px;
 }
 .iframe-item{
 	width:250px;
@@ -238,11 +240,11 @@ body{
 	margin-right: 6px !important;
 }
 #evnet-creation{
-	width:600px;
+	width:820px;
+	height:100px;
 	margin:0 auto;
 	overflow:hidden;
-	border:1px solid #B4BBCD;
-	background:#FFFFFF;
+	background:url(../images/bottom.png) no-repeat;
 }
 /*event-intro*/
 
@@ -336,7 +338,7 @@ body{
 	display:block;
 	position:absolute;
 	left:18px;
-	top:20px;
+	top:22px;
 	z-index: 1;
 }
 #hotphoto{
@@ -348,21 +350,45 @@ body{
     z-index: 0;
 }
 
+#header-bottom{
+    width:800px;
+    height: 8px;
+    margin: 0 auto;
+    background-image:url('../images/header-bottom.png');  
+    border: 0 none;  
+}
+/**
+ *     evnet 列表
+ */
 .item {
 	width: 388px;
 	margin: 20px 10px 10px;
 	float: left;
 	background-color: #fff;
-	border: 1px solid #b4bbcd;
+	
 	min-height: 50px;
 	text-align: justify;
 	word-wrap: break-word;
+	border:0 none;
+}
+
+.item-center{
+    border: 1px solid #b4bbcd;
+    border-top:0 none;
+    border-bottom: 0 none;
+    overflow: hidden;
+    width:388px;
+}
+.item-center-pack{
+    width:387px;
 }
 .itempack{
     background-color: #f8f8f8;
     border: none;
-    min-height: 50px;
+    min-height: 20px;
 }
+
+
 .inner {
 	padding: 0 10px 10px 10px;
 	float:left;
@@ -388,7 +414,7 @@ body{
 	background-image: url("../images/right.png");
 	display: block;
 	height: 15px;
-	margin-left: 388px;
+	margin-left: 389px;
 	margin-top: 8px;
 	padding: 0;
 	vertical-align: top;
@@ -401,7 +427,7 @@ body{
 	display: block;
 	height: 15px;
 	width: 13px;
-	margin-left: -13px;
+	margin-left: -10px;
 	margin-top: 8px;
 	position: absolute;
 	z-index: 2;
@@ -458,7 +484,7 @@ body{
 	font-size:14px;
 	margin:10px;
 	float:left;
-	width:400px;
+	width:368px;
 }
 .inner .event-img{
 	overflow:hidden;
@@ -478,25 +504,25 @@ body{
     padding:10px;
 }
 #evnet-creation img{
-	margin-left:160px;
+	margin-left:280px;
 	width:30px;
 	height:30px;
-	margin-top:10px;
+	margin-top:35px;
 	margin-bottom:10px;
 	float:left;
 }
 #creation-tips{
 	float:left;
-	margin-top:15px;
+	margin-top:38px;
 	margin-left:10px;
 }
 
 
-/*go to up and down*/
+/*go to up and down */
 .nav_up{
 	padding:7px;
 	background-color:white;
-	border:1px solid #CCC;
+	/*border:1px solid #CCC;*/
 	position:fixed;
 	background:transparent url(../images/up.png) no-repeat top left;
 	background-position:50% 50%;
@@ -518,7 +544,7 @@ body{
 .nav_down{
 	padding:7px;
 	background-color:white;
-	border:1px solid #CCC;
+	/*border:1px solid #CCC;*/
 	position:fixed;
 	background:transparent url(../images/down.png) no-repeat top left;
 	background-position:50% 50%;
@@ -574,7 +600,7 @@ body{
 /******
  * hotphoto
  */
-#slideshow-main{background:#fff;width:520px;float:left;margin-right:20px;}
+#slideshow-main{background:#fff;width:520px;float:left;padding:10px;}
 #slideshow-main ul{margin:0;padding:0;width:429px;}
 #slideshow-main li{width:520px;height:290px;display:none;position:relative;}
 #slideshow-main li.active{display:block!important;}
@@ -584,9 +610,9 @@ body{
 #slideshow-main li span.content p{font-size:11px;margin:5px 0;padding:0 10px;color:#42e2e8;}
 #slideshow-carousel{float:left;width:206px;height:500px;position:relative}
 #slideshow-carousel ul{background:#fff;margin:0;padding:0;list-style:none;}
-#slideshow-carousel li{background:#fff;position:relative}/*height:97px;*/
+#slideshow-carousel li{background:#fff;position:relative;padding:5px;}/*height:97px;*/
 #slideshow-carousel li .arrow{left:3px;top:28px;position:absolute;width:20px;height:40px;display:block;}
-#slideshow-carousel li a{background:#fff;display:block;width:206px;}/*height:100px;*/
+#slideshow-carousel li a{background:#fff;display:block;width:186px;}/*height:100px;*/
 #slideshow-carousel .active{filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity:1.0;opacity:1.0;}
 #slideshow-carousel .faded{filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity:0.5;opacity:0.5;}
 
@@ -596,14 +622,16 @@ body{
     float:left;
     background:#FFFFFF;
 }
-#carousel li a{
-    border-left:#B5B5B6 6px solid;
-    padding-left: 5px;
-}
+
 #welcomeHero{
     width:750px;
     margin:0 auto;
     padding:10px;
+}
+
+.photo-s-frame{
+    border-left:#B5B5B6 6px solid;
+    padding-left: 5px;    
 }
 
 

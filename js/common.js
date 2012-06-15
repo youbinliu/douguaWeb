@@ -46,7 +46,6 @@ function initComments(eventid){
     $.get("./test/comments.json",{"aid":"657"},function(data){       
                     jsondata = data;          
                     showComments();
-                    adjustHeight();
                 },'json');      
               
 }
@@ -57,7 +56,7 @@ function showComments(){
 }
 
 function buildCommentsItem(commentObj){
-    var updated_at = commentObj.updated_at.substring(5,10)+" "+commentObj.updated_at.substring(11,16)
+    var updated_at = commentObj.updated_at.substring(11,16) +" "+commentObj.updated_at.substring(5,10);
     return "<div class=\"iframe-item left\">"+
                     "<img src=\""+commentObj.avatar+"\" alt=\"avatar\" class=\"left\"/>"+
                     "<div class=\"iframe-replyinfo left\">"+
@@ -94,7 +93,6 @@ function openAllComments(){
         var commentsHtml = "";   
         for(i=num-1;i >= 0;i--) commentsHtml += buildCommentsItem(commentslist[i]);
         $('.iframe-msgs').html(commentsHtml);
-        adjustHeight();
     }    
 }
 
@@ -111,7 +109,6 @@ function replyto(cid){
             }else{
                 showComments();
             }
-            adjustHeight();
     })
     
 }
@@ -132,12 +129,4 @@ function buildTestData(content){
     return comment;
 }
 
-function adjustHeight(){
-    $(".nyroModalCont").css("top","10px");
-    $(".nyroModalCont").css("width","900px");
-    //console.log("window"+$(window).height());
-    //console.log("iframe"+$("#iframe-container").height());
-    if( ($("#iframe-container").height()+150) > $(window).height())return;
-    $(".nyroModalCont").height($("#iframe-container").height()+40);
-}
 

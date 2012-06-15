@@ -7,7 +7,6 @@
         <link href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-	<div id="bg"></div>
         <a href="#" id="download" ></a>
         <a href="#" id="nav_up"  class="nav_up"></a>
         <a href="#" id="nav_down" class="nav_down" ></a>
@@ -75,10 +74,6 @@
                     <div id="action">
                         <input type="button" class="btn left font-gray" onclick="javascript:circusee('657');" value="围观"/>
                         <input type="button" class="btn left font-gray" onclick="javascript:join('657');" value="参加"/>
-                       <!-- <a href="text.html" class="btn left font-gray fancybox">文本</a>
-                        <a href="photo.html" class="btn left font-gray fancybox">相片</a>
-                        <a href="voice.html" class="btn left font-gray fancybox">语音</a>
-                        -->
                     </div>
                     <div class="clear"></div>
                     <ul id="detail-info">
@@ -99,31 +94,40 @@
                     <a href="hotphoto.html?abc=edf" id="hotphoto-a">
                         <img src="images/photoframe.png" alt="photoframe" id="photoframe"/>
                     </a>
-                    <span id="recount" class="font-red font-12">135</span>
+                    <span id="recount" class="font-red font-10">135</span>
                     <img src="test/ex2.jpg" alt="hotimg" id="hotphoto"/>
                 </div>
-            </div>
+            </div>            
         </div>
+        <div id="header-bottom"></div>
         <div id="container">
             <div class="timeline_container">
                 <div class="timeline"></div>
             </div>
 
             <div class="item">
-                <div class="item-join">
-                    <span class="font-green">陈琦琦，邱江毅，李斯，刘友斌</span>等<span class="font-green">7</span>人参加了该活动
+                <div class="left">
+                    <img src='images/item-top.png'width="389px" height="9px" class="left"/>
                 </div>
-                <div class="inner">
-                    <div class="event-join">
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
-                        <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                <div class="item-center left">
+                    <div class="item-join">
+                        <span class="font-green">陈琦琦，邱江毅，李斯，刘友斌</span>等<span class="font-green">7</span>人参加了该活动
                     </div>
+                    <div class="inner">
+                        <div class="event-join">
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                            <img src="./images/avatar.jpg" alt="avatar" class="avatar"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src='images/item-bottom.png'width="389px" height="9px" class="left"/>
                 </div>
             </div>
         </div>
@@ -189,8 +193,10 @@
                             html = "<span class='rightCorner'></span>";
                             $(obj).prepend(html);
                         } else {
+                            $(obj).children().addClass("margin-left-2");
+                            $(obj).children(".item-center").addClass("item-center-pack");
                             html = "<span class='leftCorner'></span>";
-                            $(obj).prepend(html);
+                            $(obj).prepend(html);                           
                         }
                     });
                 }
@@ -203,6 +209,7 @@
                             });
                             Arrow_Points();
                             $(".timeline").height($("#container").height()+20);
+                            $(".fancybox").fancybox();
                         })
                         
                         $(".mp3").jmp3({
@@ -228,7 +235,12 @@
                                 item += "<div class='item itempack' rel='itempack'></div>";
                             }
                             eventlist[i].created_at = eventlist[i].created_at.substring(11, 16) + " " + eventlist[i].created_at.substring(5, 10) ;
-                            item += "<div class=\"item\">" + "<div class=\"item-header\">" + "<img src=\"" + eventlist[i].avatar + "\" alt=\"avatar\" class=\"avatar\"/>" + "<div class=\"item-user\">" + "<span class=\"font-green\">" + eventlist[i].username + "</span>" + "<span class=\"font-gray\">" + eventlist[i].created_at + "</span>" + "</div>" ; 
+                            item += "<div class=\"item\">" +
+                            "<div class=\"item-top left\">"+
+                                "<img src='images/item-top.png'width=\"389px\" height=\"9px\" class=\"left\"/>"+
+                            "</div>"+
+                            "<div class=\"item-center left\">"+
+                             "<div class=\"item-header\">" + "<img src=\"" + eventlist[i].avatar + "\" alt=\"avatar\" class=\"avatar\"/>" + "<div class=\"item-user\">" + "<span class=\"font-green\">" + eventlist[i].username + "</span>" + "<span class=\"font-gray\">" + eventlist[i].created_at + "</span>" + "</div>" ; 
                             if(eventlist[i].comment_count == 0){
                                 item += "<div class=\"item-action\">" + "<img src=\"./images/comment_n.png\" alt=\"comments\"/>" + "<span class='font-gray'>" + eventlist[i].comment_count + "</span>";
                             }else{
@@ -245,15 +257,20 @@
                             item += "</div></div>" + "</div>" + "<div class=\"inner\">";
                             if(eventlist[i].type == "voice") {
 
-                                item += "<div class=\"event-voice\">" + "<span class=\"mp3\">" + eventlist[i].content.replace("3gp", "mp3") + "</span>" + "</div>";
+                                item += "<div class=\"event-voice\"><a href='voice.html' class='fancybox'>" + "<span class=\"mp3\">" + eventlist[i].content.replace("3gp", "mp3") + "</span>" + "</a></div>";
                             } else if(eventlist[i].type == "picture") {
-                                item += "<div class=\"event-img\">" + "<div class=\"event-img\"><img src=\"" + eventlist[i].content + "\" alt='" + eventlist[i].description + "' width=370/></div>" + "</div>";
+                                item += "<div class=\"event-img\"><a href='photo.html' class='fancybox'>" + "<div class=\"event-img\"><img src=\"" + eventlist[i].content + "\" alt='" + eventlist[i].description + "' width='365' /></div>" + "</a></div>";
                             } else if(eventlist[i].type == "text") {
-                                item += "<div class=\"event-word\">	" + eventlist[i].content + "</div>"
+                                item += "<div class=\"event-word\"><a href='text.html' class='fancybox'>" + eventlist[i].content + "</a></div>"
                             } else {
 
                             }
-                            item += "</div></div>";
+                            item += "</div>"+
+                                "</div>"+
+                                "<div class='left'>"+
+                                    "<img src='images/item-bottom.png'width='389px' height='9px' class='left'/>"+
+                                "</div>"+
+                           "</div>";
                         }
                     }
                     $(item).insertAfter(".timeline_container");
