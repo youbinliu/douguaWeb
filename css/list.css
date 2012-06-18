@@ -1,0 +1,379 @@
+/***
+ *public
+ */
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:"微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#575757;
+    text-align:justify;
+}
+ul,ol {
+    list-style: none outside none;
+}
+body{
+    background-color: #f8f8f8;  
+}
+
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+
+.font-bold{
+    font-weight:bold;
+}
+.font-normal{
+    font-weight:normal;
+}
+.font-green{
+    color:#22AC38;
+}
+.font-yellow{
+    color:#F8B62D;
+}
+.font-gray{
+    color:#B5B5B6;
+}
+.font-black{
+    color: #575757;
+}
+.font-little-green{
+    color: #8FC31F;
+}
+
+.font-red{
+    color: red;
+}
+.font-10{
+    font-size:10px;
+}
+.font-12{
+    font-size:12px;
+}
+.font-14{
+    font-size:14px;
+}
+.font-18{
+    font-size:18px;
+}
+.font-24{
+    font-size:24px;
+}
+.clear{
+    clear:both;
+}
+.hr{
+    border-bottom:1px solid #DDDDDD;
+}
+
+/*go to up and down */
+.nav_up{
+    padding:7px;
+    background-color:white;
+    /*border:1px solid #CCC;*/
+    position:fixed;
+    background:transparent url(../images/up.png) no-repeat top left;
+    background-position:50% 50%;
+    width:20px;
+    height:20px;
+    /*right:240px;*/
+    left:80%;
+    top:300px;
+    opacity:0.7;
+    white-space:nowrap;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+    -khtml-border-top-right-radius:3px;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.nav_down{
+    padding:7px;
+    background-color:white;
+    /*border:1px solid #CCC;*/
+    position:fixed;
+    background:transparent url(../images/down.png) no-repeat top left;
+    background-position:50% 50%;
+    width:20px;
+    height:20px;
+    /*right:240px;*/
+    left:80%;
+    top:384px;
+    opacity:0.7;
+    white-space:nowrap;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+    -khtml-border-top-right-radius:3px;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+/****
+ *list.html 
+ */
+#main-wrapper{
+    width:800px;
+    margin:0 auto;    
+    overflow:hidden;
+}
+
+#left-wrapper{
+    width:590px;
+    float:left;
+    overflow:hidden;
+    margin-right:20px;
+    background:#FFFFFF;
+}
+
+#right-wrapper{
+    width:180px;
+    float:left;
+    overflow:hidden;
+}
+
+#nav-wrapper{
+    width:100%;
+    height:23px;
+    float:left;
+    padding-top:17px;
+    margin-bottom:10px;
+}
+#nav-wrapper img{
+    display:block;
+    float:left;
+    border: 0 none;
+}
+
+#topbar-wrapper{
+    float:right;
+    margin-top:2px;
+}
+
+#topbar-wrapper span{
+    font-size:14px;
+    margin-right:5px;
+    color:#B5B5B6;
+}
+
+#topbar-wrapper .current{
+    color:#F8B62D;
+}
+
+.list-item{
+    display:block;
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.item-top{
+    width:480px;
+    float:left;
+    padding-left:10px;
+}
+.item-right-tips{
+    width:125px;  
+}
+.item-right-tips span{
+    font-size:12px;
+    color: #B5B5B6;
+}
+.item-right-tips span .tips-joins{
+    color: #F8B62D;
+    font-weight:bold;
+}
+.item-right-tips span .tips-looks{
+    color: #22AC38;
+    font-weight:bold;
+}
+.item-intro{
+    display:block;
+    width:350px;
+    float:left;
+    padding-left:6px;
+}
+.item-intro li{
+    display:block;
+    float:left;
+    width:100%;    
+    margin-top:5px;
+}
+.item-intro li:first-child{
+    padding-bottom:10px;
+    border-bottom:1px solid #EEEEEE;
+}
+.item-intro img{
+    float:left;
+    margin:2px 4px 0 0;
+}
+
+.item-flag{
+    float:right;
+    margin-top:40px;
+}
+
+#user-wrapper{
+    margin:20px 0px;
+    border: 1px solid #DDDDDD;   
+    background:#FFFFFF; 
+}
+#user-wrapper span{
+    margin-left:10px;
+}
+
+#hot-wrapper>span{
+    display:block;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+#hot-wrapper ul li{
+    display:block;
+    float:left;
+    width:180px;
+    margin-bottom:10px;
+}
+#hot-wrapper .hot-intro{
+    width:120px;
+    float:left;
+}
+#hot-wrapper ul li img{
+   float:left;
+   margin-right:5px;
+}
+#hot-wrapper ul li p{
+   text-align:left;
+}
+
+/****
+ *default.html 
+ */
+#live-wrapper{
+    width:800px;
+    height:490px;
+    position:relative;
+}
+#live-bg{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2;
+}
+
+#live-list{
+    width:800px;
+    height:130px;
+    background:url(../images/second-title.png);
+}
+
+#liveinfo{
+    width:190px;
+    height:450px;
+    position:absolute;
+    left:5px;
+    top:36px;
+    z-index: 3;
+    
+}
+#livephoto{
+    position:absolute;
+    top:36px;
+    left:196px;
+    border:0 none;
+}
+
+.live-caption{
+    margin: 10px;    
+}
+.live-caption p{
+    text-align:left;
+    color:#B5B5B6;
+}
+
+
+.live-address-time img{
+    margin-right:10px;
+    margin-top:10px;
+    width: 14px;
+    height:14px;
+    float:left;    
+}
+.live-address-time p{
+    width:140px;
+    margin-top:10px;
+    font-size:12px;
+    float: left;
+}
+
+#list-tips{
+    height:15px;
+    margin:10px 0 8px 0;
+    width: 800px;
+    float:left;
+    text-align: right;
+}
+#prev,#next{
+    height:100px;
+    width:15px;
+    float:left;
+    cursor: pointer;
+}
+
+.clip div{
+    position:absolute;
+    bottom:0px;
+    left:0;
+    border-left: 5px solid #F8B62D;   
+    padding:0 0 2px 10px;
+    height:30px;
+    color: #FFFFFF;
+}
+/* Just for the example. Fee free to delete these three lines */
+
+.pika-thumbs{ 
+    /*padding: 0 16px;*/ 
+    height: 90px; 
+    float:left;
+    margin:0 0 0 3px;
+}
+.pika-thumbs li{ 
+    width: 135px; 
+    height:90px;     
+    overflow: hidden;
+    float: left; 
+    list-style-type: none;
+    padding: 3px; 
+    margin: 0 5px; 
+    background: #fafafa; 
+    border: 1px solid #e5e5e5; 
+    cursor: pointer;
+}
+
+.pika-thumbs li .clip {
+    position:relative;
+    height:100%;
+    text-align: left; 
+    vertical-align: center; 
+    overflow: hidden;
+}
+
+.pika-thumbs .clip img{
+    width:140px;
+}    
+    
+.pika-stage img{
+    height:100%;
+    width:100%;
+}
+
+/***
+ *hide what I need not 
+ */
+.pika-imgnav ,.pika-textnav,.pika-counter,.pika-tooltip,.pika-loader{display:none}

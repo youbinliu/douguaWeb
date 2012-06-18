@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓜</title>
+    <link href="./css/list.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="main-wrapper">        
+        <div id="live-wrapper">
+             <div id="live-bg"><img src="images/liveshow.png" /></div>
+             <div id="liveinfo"></div>
+             <div id="livephoto" style="height: 450px;width: 600px"></div>
+             
+        </div>
+        <div id="live-list">
+            <div id="list-tips" class="font-14 font-gray"><span class="font-yellow">10</span>个精彩活动的精彩直播</div>
+            <div id="prev"></div>
+            <ul id="pikame" >
+                <li>
+                    <a href="javascript:;">
+                        <img lyb='lyb' src="test/default/1.jpg"/>
+                    </a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12" style="display: none">一起看金星临日<br>05-23 13:00-21:00</div>
+                </li>
+                <li><a href="javascript:;"><img lyb='lyb' src="test/default/2.jpg"/></a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12">周杰伦跨时代演唱会<br>05-23 13:00-21:00</div>
+                </li>
+                 <li><a href="javascript:;"><img lyb='lyb' src="test/default/3.jpg"/></a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12">寻找武汉最声音<br>05-23 13:00-21:00</div>
+                </li>
+                 <li><a href="javascript:;"><img lyb='lyb' src="test/default/4.jpg"/></a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12">“风采月”笛箫名俗风<br>05-23 13:00-21:00</div>
+                </li>
+                 <li><a href="javascript:;"><img lyb='lyb' src="test/default/5.jpg"/></a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12">夜游华科<br>05-23 13:00-21:00</div>
+                </li>
+            </ul>
+            <div id="next"></div>
+        </div>        
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pikachoose/jquery.pikachoose.full.js"></script>
+     <script language="javascript">
+            $(document).ready(
+                function (){
+                   
+                    function myFunction(self){
+                        $("#pikame").children("li").children(".clip").children("div").fadeIn();
+                        $("#pikame").children("li.active").children(".clip").children("div").fadeOut();
+                    } 
+                    $("#pikame").PikaChoose({
+                        pikaStage: $("#livephoto"),
+                        autoPlay:true,
+                        transition:[0],
+                        speed:2000,
+                        animationFinished: myFunction,
+                    });
+                    
+                    $("#prev").click(function(){
+                        $('#pikame').data('pikachoose').Prev();
+                    });
+                    $("#next").click(function(){
+                        $('#pikame').data('pikachoose').Next();
+                    })
+                });
+        </script>
+</body>
+</html>
