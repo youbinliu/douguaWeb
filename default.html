@@ -105,11 +105,46 @@
                     </span>
                     <div class="font-12">夜游华科<br>05-23 13:00-21:00</div>
                 </li>
+                <li><a href="javascript:;"><img lyb='lyb' src="test/default/6.jpg"/></a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12">夜游华科<br>05-23 13:00-21:00</div>
+                </li>
+                <li><a href="javascript:;"><img lyb='lyb' src="test/default/6.jpg"/></a>
+                    <span>
+                        <div class="live-caption">
+                            <p class="font-24">MuSic In Wuhan 寻找武汉最声音
+                                <img src="images/live-s.png" style="vertical-align: middle"/>
+                            </p>
+                            <p class="font-14">公共活动</p>
+                            <div class="live-address-time">
+                                <img src="images/address-w.png"/>
+                                <p>武昌积玉桥城壕167号蓝调音乐(Blues)主题咖啡馆</p>
+                                <img src="images/time-w.png"/>
+                                <p >05-03(今天) 11:30 开始持续30天</p>
+                            </div>                              
+                        </div>
+                    </span>
+                    <div class="font-12">夜游华科<br>05-23 13:00-21:00</div>
+                </li>
             </ul>
             <div id="next"></div>
         </div>        
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pikachoose/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/pikachoose/jquery.pikachoose.full.js"></script>
      <script language="javascript">
             $(document).ready(
@@ -120,8 +155,9 @@
                         $("#pikame").children("li.active").children(".clip").children("div").fadeOut();
                     } 
                     $("#pikame").PikaChoose({
+                        carousel:true,
                         pikaStage: $("#livephoto"),
-                        autoPlay:true,
+                        autoPlay:false,
                         transition:[0],
                         speed:2000,
                         animationFinished: myFunction,
