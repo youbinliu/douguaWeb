@@ -1,14 +1,4 @@
-.bg{
-	top:-61px;
-	left:232px;
-	position:absolute;
-	background-image:url(../images/webgb.jpg);
-	width:1200px;
-	height:1230px;
-	filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;
-	z-index:10000;
 
-}
 *{
 	margin: 0 auto;
 	padding: 0;
